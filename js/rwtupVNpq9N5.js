@@ -346,7 +346,9 @@ $(document).ready(function() {
 	$(window).on('resize', function(){
 		if ($(window).width() < 1200) {
 			if(!$('#menu_trigger').length){
-				$('.main-navigation').prepend('<button id="menu_trigger" class="nav-togl"><span></span><span></span><span></span></button>');
+				$('.header-widget').append('<button type="button" id="menu_trigger" class="nav-togl" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>');
+			} else {
+				$('#menu_trigger').appendTo('.header-widget');
 			}
 			if(!$('.navtrigger').length){
 				$('.has-child > a').append('<span class="navtrigger"></span>')
@@ -366,13 +368,10 @@ $(document).ready(function() {
 	}).resize(); 
 	// Mobile menu on click open
 	$(document).on('click',"#menu_trigger", function(){
+		var isOpen = $('.main-navigation').toggleClass('open').hasClass('open');
+		$(this).toggleClass('active', isOpen).attr('aria-expanded', isOpen ? 'true' : 'false').attr('aria-label', isOpen ? 'Close menu' : 'Open menu');
 		if($('.has-child').hasClass("sub-open")){
 			$('.has-child ').removeClass('sub-open');
-			$('.main-navigation').toggleClass('open');
-			$(this).toggleClass('active');      
-		} else {
-			$('.main-navigation').toggleClass('open');
-			$(this).toggleClass('active');
 		}
 		$('.header-widget.bottom').slideUp();
 		return false;

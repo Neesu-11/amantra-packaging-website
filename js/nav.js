@@ -1,14 +1,17 @@
 (function () {
   "use strict";
 
-  var headerOffset = 88;
+  function getHeaderOffset() {
+    var header = document.querySelector(".main-header");
+    return header ? header.offsetHeight : 88;
+  }
 
   function scrollToHash(hash) {
     if (!hash || hash === "#") return;
     var target = document.querySelector(hash);
     if (!target) return;
     var top =
-      target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+      target.getBoundingClientRect().top + window.pageYOffset - getHeaderOffset();
     window.scrollTo({ top: top, behavior: "smooth" });
   }
 
