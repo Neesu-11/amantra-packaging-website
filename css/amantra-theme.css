@@ -882,6 +882,16 @@ html {
       .video-banner.home-banner > .video-banner{
         position:absolute!important;
         inset:0!important;
+        overflow:hidden!important;
+      }
+
+      .video-banner.home-banner video{
+        width:100%!important;
+        height:100%!important;
+        object-fit:cover!important;
+        filter:blur(5px)!important;
+        transform:scale(1.06)!important;
+        transform-origin:center center!important;
       }
 
 /* === Site fixes (nav, translate, floating UI, forms) === */
