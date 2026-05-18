@@ -430,11 +430,8 @@ $(window).resize(function() {
 
 function showsustainabilityCarousel() {
   if ($sustainabilityCarousel.data("owlCarousel") !== "undefined") {
-    if (window.matchMedia('(max-width: 767px)').matches) {
-      initialsustainabilityCarousel();
-    } else {
-      destroysustainabilityCarousel();
-    }
+    /* Mobile: stacked cards (natural height). Desktop: static 3-column row. */
+    destroysustainabilityCarousel();
   }
 }
 showsustainabilityCarousel();
