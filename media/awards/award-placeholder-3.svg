@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Award placeholder">
+  <defs>
+    <linearGradient id="gold3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffe08a"/>
+      <stop offset="100%" style="stop-color:#b8860b"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="118" rx="36" ry="8" fill="url(#gold3)" opacity="0.2"/>
+  <rect x="22" y="24" width="76" height="90" rx="8" fill="none" stroke="url(#gold3)" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
+  <circle cx="60" cy="58" r="18" fill="none" stroke="url(#gold3)" stroke-width="2"/>
+  <text x="60" y="64" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="url(#gold3)">AP</text>
+  <rect x="32" y="88" width="56" height="5" rx="2.5" fill="url(#gold3)" opacity="0.45"/>
+  <rect x="38" y="98" width="44" height="4" rx="2" fill="url(#gold3)" opacity="0.3"/>
+</svg>
