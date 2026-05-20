@@ -9,6 +9,16 @@
   --amantra-muted: #d9c68d;
   --amantra-line: rgba(214, 162, 30, 0.34);
   --amantra-accent: #d9c68d;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: clamp(1.25rem, 2vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 3vw, 2rem);
+  --text-hero: clamp(2rem, 5vw, 3.25rem);
+  --leading-tight: 1.15;
+  --leading-body: 1.7;
+  --section-gap: clamp(3rem, 6vw, 5rem);
   /* Desktop floating CTAs — sit above footer copyright strip */
   --amantra-copyright-bar: 92px;
   --amantra-float-gap: 20px;
@@ -376,33 +386,33 @@ html {
         background:rgba(255,255,255,.04)!important;
       }
 
-      /* FORCE CTA HOVER NO GREEN */
-      .amantra-cta,
-      .amantra-cta:visited,
-      .get-quote a.btn,
-      .get-quote a.btn:visited,
-      .quoater a.btn,
-      .quoater a.btn:visited,
-      a.btn,
-      a.btn:visited{
+      /* Outline / secondary CTAs only — primary uses .btn-primary below */
+      .amantra-cta:not(.btn-primary):not(.amantra-cta-primary),
+      .amantra-cta:not(.btn-primary):not(.amantra-cta-primary):visited,
+      .get-quote a.btn:not(.btn-primary):not(.amantra-cta-primary),
+      .get-quote a.btn:not(.btn-primary):not(.amantra-cta-primary):visited,
+      .quoater a.btn:not(.btn-primary):not(.amantra-cta-primary),
+      .quoater a.btn:not(.btn-primary):not(.amantra-cta-primary):visited,
+      a.btn.btn-outline:not(.btn-primary),
+      a.btn.btn-outline:not(.btn-primary):visited{
         background:linear-gradient(135deg,rgba(214,162,30,.12),rgba(214,162,30,.03))!important;
         color:var(--amantra-cream)!important;
         border:1px solid var(--amantra-gold)!important;
         box-shadow:none!important;
       }
 
-      .amantra-cta:hover,
-      .amantra-cta:focus,
-      .amantra-cta:active,
-      .get-quote a.btn:hover,
-      .get-quote a.btn:focus,
-      .get-quote a.btn:active,
-      .quoater a.btn:hover,
-      .quoater a.btn:focus,
-      .quoater a.btn:active,
-      a.btn:hover,
-      a.btn:focus,
-      a.btn:active{
+      .amantra-cta:not(.btn-primary):not(.amantra-cta-primary):hover,
+      .amantra-cta:not(.btn-primary):not(.amantra-cta-primary):focus,
+      .amantra-cta:not(.btn-primary):not(.amantra-cta-primary):active,
+      .get-quote a.btn:not(.btn-primary):not(.amantra-cta-primary):hover,
+      .get-quote a.btn:not(.btn-primary):not(.amantra-cta-primary):focus,
+      .get-quote a.btn:not(.btn-primary):not(.amantra-cta-primary):active,
+      .quoater a.btn:not(.btn-primary):not(.amantra-cta-primary):hover,
+      .quoater a.btn:not(.btn-primary):not(.amantra-cta-primary):focus,
+      .quoater a.btn:not(.btn-primary):not(.amantra-cta-primary):active,
+      a.btn.btn-outline:not(.btn-primary):hover,
+      a.btn.btn-outline:not(.btn-primary):focus,
+      a.btn.btn-outline:not(.btn-primary):active{
         background:linear-gradient(135deg,var(--amantra-gold-light),var(--amantra-gold))!important;
         color:#050505!important;
         border-color:var(--amantra-gold-light)!important;
@@ -411,14 +421,73 @@ html {
         box-shadow:0 14px 34px rgba(214,162,30,.30)!important;
       }
 
-      .amantra-cta:hover span,
-      .amantra-cta:focus span,
-      .get-quote a.btn:hover span,
-      .get-quote a.btn:focus span,
-      .quoater a.btn:hover span,
-      .quoater a.btn:focus span,
-      a.btn:hover span,
-      a.btn:focus span{
+      .amantra-cta:not(.btn-primary):not(.amantra-cta-primary):hover span,
+      .amantra-cta:not(.btn-primary):not(.amantra-cta-primary):focus span,
+      .get-quote a.btn:not(.btn-primary):not(.amantra-cta-primary):hover span,
+      .get-quote a.btn:not(.btn-primary):not(.amantra-cta-primary):focus span,
+      .quoater a.btn:not(.btn-primary):not(.amantra-cta-primary):hover span,
+      .quoater a.btn:not(.btn-primary):not(.amantra-cta-primary):focus span,
+      a.btn.btn-outline:not(.btn-primary):hover span,
+      a.btn.btn-outline:not(.btn-primary):focus span{
+        color:#050505!important;
+      }
+
+      /* Primary CTA — gold fill, dark text for contrast */
+      .btn.btn-primary,
+      .btn.amantra-cta-primary,
+      .get-quote a.btn.btn-primary,
+      .get-quote a.btn.amantra-cta-primary,
+      .amantra-hero-actions .btn-primary,
+      .amantra-inline-cta .btn-primary,
+      .have-projects-sec .btn-primary,
+      a.btn-primary.amantra-cta{
+        display:inline-flex!important;
+        align-items:center!important;
+        justify-content:center!important;
+        text-align:center!important;
+        line-height:1.25!important;
+        padding:12px 24px!important;
+        background:linear-gradient(135deg,var(--amantra-gold-light),var(--amantra-gold))!important;
+        color:#050505!important;
+        border:1px solid var(--amantra-gold-light)!important;
+        box-shadow:0 12px 32px rgba(214,162,30,.28)!important;
+        font-weight:700!important;
+      }
+
+      .btn.btn-primary span,
+      .btn.amantra-cta-primary span,
+      .get-quote a.btn.btn-primary span,
+      .get-quote a.btn.amantra-cta-primary span,
+      .amantra-hero-actions .btn-primary span,
+      .amantra-inline-cta .btn-primary span,
+      .have-projects-sec .btn-primary span,
+      a.btn-primary.amantra-cta span{
+        display:inline!important;
+        position:static!important;
+        color:#050505!important;
+        line-height:inherit!important;
+      }
+
+      .btn.btn-primary:hover,
+      .btn.btn-primary:focus,
+      .btn.amantra-cta-primary:hover,
+      .btn.amantra-cta-primary:focus,
+      .get-quote a.btn.btn-primary:hover,
+      .get-quote a.btn.amantra-cta-primary:hover,
+      .amantra-inline-cta .btn-primary:hover,
+      .have-projects-sec .btn-primary:hover{
+        background:linear-gradient(135deg,var(--amantra-gold-light),var(--amantra-gold))!important;
+        color:#050505!important;
+        border-color:var(--amantra-gold-light)!important;
+      }
+
+      .btn.btn-primary:hover span,
+      .btn.btn-primary:focus span,
+      .btn.amantra-cta-primary:hover span,
+      .btn.amantra-cta-primary:focus span,
+      .get-quote a.btn.btn-primary:hover span,
+      .amantra-inline-cta .btn-primary:hover span,
+      .have-projects-sec .btn-primary:hover span{
         color:#050505!important;
       }
 
@@ -466,6 +535,15 @@ html {
         line-height:1.7!important;
       }
 
+      .have-projects-sec{
+        background:transparent!important;
+      }
+
+      .have-projects-sec h2,
+      .have-projects-sec p{
+        color:var(--amantra-cream)!important;
+      }
+
       .have-projects-sec .have-projects-tagline{
         margin-top:14px!important;
         color:var(--amantra-gold-light)!important;
@@ -473,6 +551,12 @@ html {
 
       .have-projects-sec .have-projects-tagline strong{
         color:var(--amantra-gold-light)!important;
+      }
+
+      .have-projects-sec .quoater{
+        display:flex!important;
+        justify-content:center!important;
+        align-items:center!important;
       }
 
       /* PORTFOLIO TABS */
@@ -2828,4 +2912,390 @@ iframe.goog-te-menu-frame,
 
 .footer-social-links li:hover a::after {
   top: -48px !important;
+}
+
+/* === UX conversion layer (tokens, layout, a11y, motion) === */
+
+.section-lead {
+  max-width: 42rem;
+  margin: 0 auto 1.75rem;
+  color: var(--amantra-muted) !important;
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+}
+
+/* Primary buttons — reinforced (see also header/hero block above) */
+.btn.btn-primary,
+.btn.amantra-cta-primary,
+.get-quote .btn.btn-primary,
+.amantra-inline-cta .btn.btn-primary,
+.have-projects-sec .btn.btn-primary,
+.amantra-hero-actions .btn.btn-primary,
+a.btn-primary.amantra-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  background: linear-gradient(
+    135deg,
+    var(--amantra-gold-light),
+    var(--amantra-gold)
+  ) !important;
+  color: #050505 !important;
+  border: 1px solid var(--amantra-gold-light) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 12px 32px rgba(214, 162, 30, 0.28) !important;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.amantra-cta-primary:hover,
+.btn.amantra-cta-primary:focus,
+.get-quote .btn.btn-primary:hover,
+.get-quote .btn.btn-primary:focus,
+.amantra-inline-cta .btn.btn-primary:hover,
+.have-projects-sec .btn.btn-primary:hover {
+  color: #050505 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(214, 162, 30, 0.36) !important;
+}
+
+.btn.btn-primary span,
+.btn.amantra-cta-primary span,
+.get-quote .btn.btn-primary span,
+.amantra-inline-cta .btn.btn-primary span,
+.have-projects-sec .btn.btn-primary span,
+.amantra-hero-actions .btn.btn-primary span,
+a.btn-primary.amantra-cta span {
+  display: inline !important;
+  position: static !important;
+  color: #050505 !important;
+  line-height: inherit !important;
+}
+
+/* Disable legacy white slide pseudo-elements on filled primary buttons */
+.btn.btn-primary::before,
+.btn.btn-primary::after,
+.btn.amantra-cta-primary::before,
+.btn.amantra-cta-primary::after,
+.get-quote .btn.btn-primary::before,
+.get-quote .btn.btn-primary::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Hero — value-first hierarchy */
+.amantra-hero-eyebrow {
+  margin: 0 0 10px;
+  color: var(--amantra-muted) !important;
+  font-size: var(--text-sm) !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+}
+
+.amantra-hero-content h1 {
+  font-size: var(--text-hero) !important;
+  line-height: var(--leading-tight) !important;
+  color: var(--amantra-gold-light) !important;
+  margin-bottom: 10px !important;
+}
+
+.amantra-hero-tagline {
+  font-size: clamp(13px, 1.5vw, 16px) !important;
+  letter-spacing: 0.18em !important;
+  margin-bottom: 16px !important;
+}
+
+.video-banner.home-banner {
+  min-height: min(100vh, 900px) !important;
+}
+
+@media (max-width: 767px) {
+  .video-banner.home-banner {
+    min-height: min(85svh, 720px) !important;
+  }
+
+  .amantra-hero-logo {
+    display: none !important;
+  }
+
+  .amantra-hero-content {
+    padding: 24px 20px !important;
+    width: min(94%, 520px) !important;
+  }
+
+  .amantra-hero-copy p {
+    font-size: var(--text-sm) !important;
+  }
+}
+
+html.hero-video-off .hero-video-wrap,
+html.reduce-motion .hero-video-wrap {
+  background: linear-gradient(180deg, #050505 0%, #100d07 50%, #050505 100%);
+}
+
+html.hero-video-off .hero-video,
+html.reduce-motion .hero-video {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Trust strip */
+.trust-strip {
+  padding: clamp(1.25rem, 3vw, 2rem) 0;
+  background: linear-gradient(
+    180deg,
+    rgba(214, 162, 30, 0.08),
+    transparent
+  );
+  border-bottom: 1px solid var(--amantra-line);
+}
+
+.trust-strip__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trust-strip__item {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--amantra-line);
+  text-align: center;
+}
+
+.trust-strip__label {
+  display: block;
+  color: var(--amantra-cream) !important;
+  font-size: var(--text-sm);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .trust-strip__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .trust-strip__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Why Amantra cards */
+.why-amantra-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+  text-align: left;
+}
+
+.why-amantra-card {
+  padding: 24px 26px;
+  border-radius: 20px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 224, 138, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid var(--amantra-line);
+}
+
+.why-amantra-card p {
+  margin: 0;
+  color: var(--amantra-cream) !important;
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+}
+
+.why-amantra-card--accent {
+  border-color: var(--amantra-gold-light);
+}
+
+.why-amantra-card--accent p {
+  color: var(--amantra-gold-light) !important;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .why-amantra-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Capabilities */
+.capabilities-panel {
+  max-width: 820px;
+  margin: 28px auto 0;
+  padding: 32px 36px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(255, 224, 138, 0.09), rgba(5, 5, 5, 0.4));
+  border: 1px solid var(--amantra-line);
+  text-align: left;
+}
+
+.capabilities-panel p {
+  margin: 16px 0 0;
+  color: var(--amantra-cream) !important;
+  line-height: var(--leading-body);
+}
+
+.capabilities-panel .icon img {
+  max-height: 72px;
+  width: auto;
+}
+
+.sustainability-carousel--two .item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (max-width: 767px) {
+  .sustainability-carousel--two {
+    flex-direction: column;
+  }
+
+  .sustainability-carousel--two .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Recognition — static grid */
+.recognition-grid {
+  margin-top: 32px;
+  align-items: flex-start;
+}
+
+.recognition-grid .our-awards-logo {
+  margin-bottom: 12px;
+}
+
+.recognition-grid p {
+  color: var(--amantra-cream) !important;
+  font-weight: 600;
+}
+
+/* Inline CTA — button only, no full-width color band */
+.amantra-inline-cta {
+  background: transparent !important;
+  border: none !important;
+}
+
+.amantra-inline-cta .container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+}
+
+.amantra-inline-cta .btn.btn-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  flex: 0 0 auto !important;
+  min-height: 48px;
+  padding: 14px 28px !important;
+}
+
+.amantra-inline-cta .btn.btn-primary span {
+  display: inline !important;
+  position: static !important;
+  white-space: nowrap;
+}
+
+/* Header Get A Quote — centered in fixed width */
+.get-quote a.btn.btn-primary {
+  width: auto !important;
+  min-width: 148px !important;
+  max-width: 100% !important;
+  padding: 10px 18px !important;
+  font-size: 14px !important;
+}
+
+.get-quote a.btn.btn-primary span {
+  display: inline !important;
+  position: static !important;
+}
+
+.services-sec__head {
+  margin-bottom: 8px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  .animated,
+  .animatedParent .animated {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .animatedParent .animated.go {
+    animation: none !important;
+  }
+
+  .our-portfolio-logo:hover img {
+    transform: none !important;
+  }
+}
+
+html.reduce-motion .animated,
+html.reduce-motion .animatedParent .animated {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+html.reduce-motion {
+  scroll-behavior: auto !important;
+}
+
+#button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Primary CTAs — pill only, never full-width gold strip */
+.btn.btn-primary,
+.btn.amantra-cta-primary,
+.get-quote a.btn.btn-primary,
+.amantra-inline-cta a.btn.btn-primary,
+.have-projects-sec a.btn.btn-primary,
+.amantra-hero-actions a.btn.btn-primary,
+a.btn.btn-primary.amantra-cta {
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  flex: 0 0 auto !important;
+  align-self: center !important;
+}
+
+.amantra-hero-actions {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.amantra-hero-actions .btn {
+  flex: 0 0 auto !important;
+  width: auto !important;
+}
+
+.have-projects-sec .quoater a.btn {
+  width: auto !important;
 }

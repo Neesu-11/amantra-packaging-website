@@ -8,7 +8,7 @@
     />
 <title>Amantra Packaging Pvt. Ltd.</title>
     <meta
-      name="meta_description"
+      name="description"
       content="Amantra Packaging Pvt. Ltd. provides packaging, label printing, business cards, brochures, manuals and customised printing solutions."
     />
     <meta
@@ -80,10 +80,7 @@
           <nav class="main-navigation">
             <ul class="menu mb-0 list-unstyled">
               <li class="hvr-underline-from-left">
-                <a href="#about">About</a>
-              </li>
-              <li class="hvr-underline-from-left">
-                <a href="#about">Our Team</a>
+                <a href="#services">Solutions</a>
               </li>
               <li class="hvr-underline-from-left has-submenu">
                 <a href="#services">Packaging Solutions</a>
@@ -93,26 +90,21 @@
                     <a href="#services">Services</a>
                   </li>
                   <li>
-                    <a href="#sustainability">Technology and Equipment</a>
+                    <a href="#capabilities">Technology and Equipment</a>
                   </li>
                 </ul>
               </li>
               <li class="hvr-underline-from-left">
-                <a href="#services">Products</a>
+                <a href="#capabilities">Capabilities</a>
               </li>
               <li class="hvr-underline-from-left">
-                <a href="#sustainability">Capabilities</a>
+                <a href="#portfolio">Work</a>
               </li>
               <li class="hvr-underline-from-left">
-                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
               </li>
               <li class="hvr-underline-from-left">
-                <a
-                  href="https://wa.me/919990184480?text=Hello%2C%20I%20would%20like%20to%20get%20in%20touch%20with%20Amantra%20Packaging."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Contact Us</a
-                >
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
@@ -122,7 +114,7 @@
                 <li class="get-quote">
                   <a
                     href="https://wa.me/919990184480?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote%20from%20Amantra%20Packaging."
-                    class="btn btn-outline"
+                    class="btn btn-primary amantra-cta-primary"
                     target="_blank"
                     rel="noopener noreferrer"
                     ><span>Get A Quote</span></a
@@ -195,9 +187,17 @@
 
     <main>
       <!-- content  -->
-      <section id="home" class="video-banner home-banner">
-        <div class="video-banner">
-          <video class="w-100" loop autoplay muted playsinline>
+      <section id="home" class="video-banner home-banner" aria-labelledby="hero-heading">
+        <div class="video-banner hero-video-wrap">
+          <video
+            class="w-100 hero-video"
+            loop
+            autoplay
+            muted
+            playsinline
+            preload="metadata"
+            poster="/images/amantra-logo.webp"
+          >
             <source
               src="/media/hero-background.mp4"
               type="video/mp4"
@@ -206,29 +206,24 @@
         </div>
         <div class="amantra-hero-content">
           <img
+            class="amantra-hero-logo"
             src="/images/amantra-logo.webp"
-            alt="Amantra Packaging Pvt. Ltd."
+            alt=""
+            aria-hidden="true"
           />
-          <h1>Amantra Packaging</h1>
+          <p class="amantra-hero-eyebrow">Amantra Packaging</p>
+          <h1 id="hero-heading">Premium Packaging Solutions for Modern Brands</h1>
           <p class="amantra-hero-tagline">Your Brand, Our Mantra.</p>
-          <p class="amantra-hero-subtitle">
-            Premium Packaging Solutions for Modern Brands
-          </p>
           <div class="amantra-hero-copy">
             <p>
               At Amantra Packaging, we create packaging that builds brand
               identity, enhances presentation, and delivers lasting impressions.
             </p>
-            <p>
-              From customised packaging and premium printing to labels, cartons,
-              sleeves, and sourcing solutions   we help businesses scale with
-              creativity, quality, and precision.
-            </p>
           </div>
           <div class="amantra-hero-actions">
             <a
               href="https://wa.me/919990184480?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote%20from%20Amantra%20Packaging."
-              class="btn btn-outline amantra-cta"
+              class="btn btn-primary amantra-cta amantra-cta-primary"
               target="_blank"
               rel="noopener noreferrer"
               ><span>Get a Quote</span></a
@@ -236,46 +231,299 @@
             <a
               href="#services"
               class="btn btn-outline amantra-cta amantra-cta-secondary"
-              ><span>Explore Services</span></a
+              ><span>Explore Solutions</span></a
             >
           </div>
         </div>
         <div class="overlay-bg"></div>
       </section>
 
-      <!-- Overview -->
+      <section class="trust-strip" aria-labelledby="trust-strip-heading">
+        <div class="container">
+          <h2 id="trust-strip-heading" class="visually-hidden">Why brands trust Amantra</h2>
+          <ul class="trust-strip__list">
+            <li class="trust-strip__item">
+              <span class="trust-strip__label">Customised packaging &amp; premium printing</span>
+            </li>
+            <li class="trust-strip__item">
+              <span class="trust-strip__label">Labels, cartons, flexible packaging &amp; sourcing</span>
+            </li>
+            <li class="trust-strip__item">
+              <span class="trust-strip__label">Modern production capabilities</span>
+            </li>
+            <li class="trust-strip__item">
+              <span class="trust-strip__label">Quality-driven solutions aligned with your brand</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <section id="about" class="home-overview sec-pt-80 sec-pb-80 text-center">
-        <div class="container animatedParent animateOnce home_banner">
-          <h2 class="animated fadeInDownShort">About Amantra Packaging</h2>
-          <div class="overview-con animated fadeInDownShort">
-            <p>
-              Amantra Packaging is built to help modern brands grow through smart
-              packaging and reliable execution.
-            </p>
-            <p>
+      <!-- Packaging solutions -->
+      <section id="services" class="services-sec sec-pt-80 sec-pb-80" aria-labelledby="services-heading">
+        <div class="container">
+          <div class="text-center services-sec__head">
+            <h2 id="services-heading">What We Do</h2>
+            <p class="section-lead">
               We specialise in customised packaging, printing solutions, premium
               finishes, labels, cartons, flexible packaging, and strategic sourcing
               support tailored for today&rsquo;s market.
             </p>
+          </div>
+          <div class="bottom-wiget">
+            <div class="row-md service-carousel">
+              <div class="item col-md-6">
+                <div class="bottom-box">
+                  <img
+                    src="/media/services/offset.png"
+                    alt="Custom packaging solutions"
+                    class="w-100 service-card-img"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                  />
+                  <div class="caption-info">
+                    <h3><a href="#services">Custom Packaging</a></h3>
+                    <div class="info">
+                      Packaging solutions designed around your product and brand
+                      identity.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-md-6">
+                <div class="bottom-box">
+                  <img
+                    src="/media/services/digital.png"
+                    alt="Digital and offset printing"
+                    class="w-100 service-card-img"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                  />
+                  <div class="caption-info">
+                    <h3>
+                      <a href="#services">Digital &amp; Offset Printing</a>
+                    </h3>
+                    <div class="info">
+                      Sharp, premium-quality printing with modern finishing
+                      standards.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-md-6">
+                <div class="bottom-box">
+                  <img
+                    src="/media/services/screen.png"
+                    alt="Labels and shrink sleeves"
+                    class="w-100 service-card-img"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                  />
+                  <div class="caption-info">
+                    <h3><a href="#services">Labels &amp; Shrink Sleeves</a></h3>
+                    <div class="info">
+                      Packaging designed to improve shelf appeal and brand
+                      visibility.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-md-6">
+                <div class="bottom-box">
+                  <img
+                    src="/media/services/flexo.png"
+                    alt="Flexible packaging production"
+                    class="w-100 service-card-img"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                  />
+                  <div class="caption-info">
+                    <h3><a href="#services">Flexible Packaging</a></h3>
+                    <div class="info">
+                      Practical and scalable solutions for growing businesses.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-md-6">
+                <div class="bottom-box">
+                  <img
+                    src="/media/portfolio/finish-1.png"
+                    alt="Premium finishing on packaging"
+                    class="w-100 service-card-img"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                  />
+                  <div class="caption-info">
+                    <h3><a href="#services">Premium Finishing</a></h3>
+                    <div class="info">
+                      Luxury textures, metallic effects, speciality coatings, and
+                      modern enhancements.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-md-6">
+                <div class="bottom-box">
+                  <img
+                    src="/media/services/offset.png"
+                    alt="Packaging sourcing support"
+                    class="w-100 service-card-img"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                  />
+                  <div class="caption-info">
+                    <h3><a href="#services">Packaging Sourcing Support</a></h3>
+                    <div class="info">
+                      Helping brands connect with reliable packaging and printing
+                      solutions through a strong industry network.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="amantra-inline-cta sec-pt-40 sec-pb-40" aria-label="Request a quote">
+        <div class="container text-center">
+          <a
+            href="https://wa.me/919990184480?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote%20from%20Amantra%20Packaging."
+            class="btn btn-primary amantra-cta-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span>Get a Quote on WhatsApp</span></a
+          >
+        </div>
+      </section>
+
+      <section id="about" class="why-amantra-sec sec-pt-80 sec-pb-80 text-center" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading">Why Choose Amantra</h2>
+          <div class="why-amantra-grid">
+            <article class="why-amantra-card">
+              <p>
+                Amantra Packaging is built to help modern brands grow through smart
+                packaging and reliable execution.
+              </p>
+            </article>
+            <article class="why-amantra-card">
+              <p>
+                From customised packaging and premium printing to labels, cartons,
+                sleeves, and sourcing solutions   we help businesses scale with
+                creativity, quality, and precision.
+              </p>
+            </article>
+            <article class="why-amantra-card">
+              <p>
+                With strong industry collaborations and modern production
+                capabilities, we help businesses access quality driven packaging
+                solutions that align with their brand identity and business goals.
+              </p>
+            </article>
+            <article class="why-amantra-card why-amantra-card--accent">
+              <p>
+                Because great packaging doesn&rsquo;t just carry a product   it
+                represents the brand behind it.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="capabilities" class="capabilities-sec sec-pt-80 sec-pb-80 text-center" aria-labelledby="capabilities-heading">
+        <div class="container">
+          <h2 id="capabilities-heading">Capabilities &amp; Production</h2>
+          <p class="section-lead">
+            With strong industry collaborations and modern production
+            capabilities, we help businesses access quality driven packaging
+            solutions that align with their brand identity and business goals.
+          </p>
+          <div class="capabilities-panel">
+            <span class="icon d-block mx-auto"
+              ><img
+                src="/media/iDzUyJvkG97m.svg"
+                alt="HP Indigo printing technology"
+                width="80"
+                height="80"
+            /></span>
             <p>
-              With strong industry collaborations and modern production
-              capabilities, we help businesses access quality driven packaging
-              solutions that align with their brand identity and business goals.
-            </p>
-            <p class="overview-closer">
-              Because great packaging doesn&rsquo;t just carry a product   it
-              represents the brand behind it.
+              Our use of HP Indigo presses such as Indigo
+              6K allows us to minimise our carbon footprint by planning,
+              quantifying, and implementing all necessary measures to
+              neutralise the greenhouse gas emissions from press
+              manufacturing, encompassing the entire process from raw
+              material extraction to factory completion.
             </p>
           </div>
         </div>
       </section>
 
+      <!-- sustainability -->
+      <section id="sustainability" class="sustainability-sec sec-pt-80 sec-pb-80 text-center" aria-labelledby="sustainability-heading">
+        <div class="container">
+          <h2 id="sustainability-heading">Sustainability Matters</h2>
+          <p class="sustainability-intro section-lead">
+            We believe the future of packaging should be both impactful and
+            responsible. Amantra Packaging focuses on smarter materials, efficient production
+            practices, and eco-conscious packaging solutions designed for modern
+            businesses and evolving consumer expectations.
+          </p>
+
+          <div class="row-md sustainability-carousel sustainability-carousel--two">
+            <div class="item col-md-6">
+              <div class="sust-indi">
+                <span class="icon d-block mx-auto"
+                  ><img
+                    src="/media/p5flKKQrnVUe.svg"
+                    alt="Recyclable packaging icon"
+                    width="80"
+                    height="80"
+                /></span>
+                <p>
+                  As a sustainable packaging provider, we believe in recyclable
+                  options designed to minimise environmental impact by allowing
+                  materials to be processed and reused in new products. We
+                  invest in the latest green technologies, stay informed about
+                  industry best practices, and engage with our community to
+                  promote environmental awareness.
+                </p>
+              </div>
+            </div>
+            <div class="item col-md-6">
+              <div class="sust-indi">
+                <span class="icon d-block mx-auto"
+                  ><img
+                    src="/media/LqEHd6jhMgjW.svg"
+                    alt="Biodegradable packaging icon"
+                    width="80"
+                    height="80"
+                /></span>
+                <p>
+                  Our biodegradable packaging options reflect our commitment to
+                  reducing waste and promoting eco-friendly practices.Our team
+                  designs packaging that fulfils your functional needs and
+                  prioritises environmental impact, while our printing machinery
+                  minimises waste, conserves resources, and supports a
+                  sustainable future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Portfolio -->
-      <section id="portfolio" class="portfolio-sec sec-pt-80 sec-pb-80 text-center">
-        <div class="container animatedParent animateOnce" data-sequence="300">
-          <h2 class="animated fadeInLeftShort" data-id="1">Portfolio</h2>
-          <p class="animated fadeInLeftShort" data-id="2">
+      <section id="portfolio" class="portfolio-sec sec-pt-80 sec-pb-80 text-center" aria-labelledby="portfolio-heading">
+        <div class="container">
+          <h2 id="portfolio-heading">Portfolio</h2>
+          <p class="section-lead">
             AMANTRA PACKAGING RECENT WORK
           </p>
 
@@ -467,249 +715,17 @@
             </div>
           </div>
 
-          <a href="#portfolio" class="btn"><span>View All</span></a>
-        </div>
-      </section>
-
-      <!-- sustainability -->
-      <section id="sustainability" class="sustainability-sec sec-pt-80 sec-pb-80 text-center">
-        <div class="container animatedParent animateOnce" data-sequence="300">
-          <h2 class="animated fadeInLeftShort" data-id="1">Sustainability Matters</h2>
-          <p class="animated fadeInLeftShort sustainability-intro" data-id="2">
-            We believe the future of packaging should be both impactful and
-            responsible.
-          </p>
-          <p class="animated fadeInLeftShort sustainability-intro" data-id="3">
-            Amantra Packaging focuses on smarter materials, efficient production
-            practices, and eco-conscious packaging solutions designed for modern
-            businesses and evolving consumer expectations.
-          </p>
-
-          <div
-            class="row-md sustainability-carousel animated fadeInLeftShort"
-            data-id="4"
-          >
-            <div class="item col-md-4">
-              <div class="sust-indi">
-                <span class="icon d-block mx-auto"
-                  ><img
-                    src="/media/p5flKKQrnVUe.svg"
-                    alt=""
-                /></span>
-                <p>
-                  As a sustainable packaging provider, we believe in recyclable
-                  options designed to minimise environmental impact by allowing
-                  materials to be processed and reused in new products. We
-                  invest in the latest green technologies, stay informed about
-                  industry best practices, and engage with our community to
-                  promote environmental awareness.
-                </p>
-              </div>
-            </div>
-            <div class="item col-md-4">
-              <div class="sust-indi">
-                <span class="icon d-block mx-auto"
-                  ><img
-                    src="/media/iDzUyJvkG97m.svg"
-                    alt=""
-                /></span>
-                <p>
-                  Our use of HP Indigo presses such as and Indigo
-                  6K allows us to minimise our carbon footprint by planning,
-                  quantifying, and implementing all necessary measures to
-                  neutralise the greenhouse gas emissions from press
-                  manufacturing, encompassing the entire process from raw
-                  material extraction to factory completion.
-                </p>
-              </div>
-            </div>
-            <div class="item col-md-4">
-              <div class="sust-indi">
-                <span class="icon d-block mx-auto"
-                  ><img
-                    src="/media/LqEHd6jhMgjW.svg"
-                    alt=""
-                /></span>
-                <p>
-                  Our biodegradable packaging options reflect our commitment to
-                  reducing waste and promoting eco-friendly practices.Our team
-                  designs packaging that fulfils your functional needs and
-                  prioritises environmental impact, while our printing machinery
-                  minimises waste, conserves resources, and supports a
-                  sustainable future.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Services -->
-      <section id="services" class="services-sec sec-pt-80 sec-pb-80">
-        <div class="container">
-          <div
-            class="animatedParent animateOnce text-center"
-            data-sequence="300"
-          >
-            <h2 class="animated fadeInLeftShort" data-id="1">What We Do</h2>
-          </div>
-          <div class="bottom-wiget">
-            <div
-              class="row-md service-carousel animatedParent animateOnce"
-              data-sequence="300"
-            >
-              <div class="item col-md-6 animated fadeInDownShort" data-id="1">
-                <div class="bottom-box">
-                  <img
-                    src="/media/services/offset.png"
-                    alt="Custom packaging solutions"
-                    class="w-100 service-card-img"
-                    loading="lazy"
-                  />
-                  <div class="caption-info">
-                    <h3><a href="#services">Custom Packaging</a></h3>
-                    <div class="info">
-                      Packaging solutions designed around your product and brand
-                      identity.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item col-md-6 animated fadeInDownShort" data-id="1">
-                <div class="bottom-box">
-                  <img
-                    src="/media/services/digital.png"
-                    alt="Digital and offset printing"
-                    class="w-100 service-card-img"
-                    loading="lazy"
-                  />
-                  <div class="caption-info">
-                    <h3>
-                      <a href="#services">Digital &amp; Offset Printing</a>
-                    </h3>
-                    <div class="info">
-                      Sharp, premium-quality printing with modern finishing
-                      standards.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item col-md-6 animated fadeInDownShort" data-id="1">
-                <div class="bottom-box">
-                  <img
-                    src="/media/services/screen.png"
-                    alt="Labels and shrink sleeves"
-                    class="w-100 service-card-img"
-                    loading="lazy"
-                  />
-                  <div class="caption-info">
-                    <h3><a href="#services">Labels &amp; Shrink Sleeves</a></h3>
-                    <div class="info">
-                      Packaging designed to improve shelf appeal and brand
-                      visibility.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item col-md-6 animated fadeInDownShort" data-id="1">
-                <div class="bottom-box">
-                  <img
-                    src="/media/services/flexo.png"
-                    alt="Flexible packaging production"
-                    class="w-100 service-card-img"
-                    loading="lazy"
-                  />
-                  <div class="caption-info">
-                    <h3><a href="#services">Flexible Packaging</a></h3>
-                    <div class="info">
-                      Practical and scalable solutions for growing businesses.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item col-md-6 animated fadeInDownShort" data-id="1">
-                <div class="bottom-box">
-                  <img
-                    src="/media/portfolio/finish-1.png"
-                    alt="Premium finishing on packaging"
-                    class="w-100 service-card-img"
-                    loading="lazy"
-                  />
-                  <div class="caption-info">
-                    <h3><a href="#services">Premium Finishing</a></h3>
-                    <div class="info">
-                      Luxury textures, metallic effects, speciality coatings, and
-                      modern enhancements.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item col-md-6 animated fadeInDownShort" data-id="1">
-                <div class="bottom-box">
-                  <img
-                    src="/media/services/offset.png"
-                    alt="Packaging sourcing support"
-                    class="w-100 service-card-img"
-                    loading="lazy"
-                  />
-                  <div class="caption-info">
-                    <h3><a href="#services">Packaging Sourcing Support</a></h3>
-                    <div class="info">
-                      Helping brands connect with reliable packaging and printing
-                      solutions through a strong industry network.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Have projects -->
-      <section id="projects" class="have-projects-sec sec-pt-80 sec-pb-80">
-        <div class="container">
-          <div
-            class="have-projects-row animatedParent animateOnce"
-            data-sequence="300"
-          >
-            <div
-              class="col-left animated fadeInLeftShort text-center text-lg-start"
-              data-id="1"
-            >
-              <h2>Let&rsquo;s Build Something Powerful Together</h2>
-              <p>
-                Whether you&rsquo;re launching a new product, upgrading your
-                packaging, or exploring better production solutions Amantra
-                Packaging is ready to help you create packaging that truly
-                represents your brand.
-              </p>
-              <p class="have-projects-tagline">
-                <strong>Amantra Packaging Your Brand, Our Mantra.</strong>
-              </p>
-            </div>
-            <div class="col-right animated fadeInRightShort" data-id="2">
-              <div class="quoater mt-4 mt-lg-0">
-                <a
-                  href="https://wa.me/919990184480?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote%20from%20Amantra%20Packaging."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-white"
-                  ><span>Get A Quote</span></a
-                >
-              </div>
-            </div>
-          </div>
+          <a href="#services" class="btn btn-outline"><span>Explore Solutions</span></a>
         </div>
       </section>
 
       <!-- What our satisfied -->
-      <section id="testimonials" class="satisfied-sec sec-pt-80 sec-pb-80">
-        <div class="container-fluid animatedParent animateOnce mb-5 pb-3">
+      <section id="testimonials" class="satisfied-sec sec-pt-80 sec-pb-80" aria-labelledby="testimonials-heading">
+        <div class="container-fluid mb-4 pb-2">
           <div class="headings testimonials-head">
-            <div class="testimonials-head__copy animated fadeInLeftShort">
+            <div class="testimonials-head__copy">
               <span class="section-eyebrow">Client Voices</span>
-              <h2 class="testimonials-head__title">
+              <h2 id="testimonials-heading" class="testimonials-head__title">
                 <span class="testimonials-head__line">What our satisfied</span>
                 <span class="testimonials-head__line testimonials-head__accent"
                   >clients say</span
@@ -737,8 +753,9 @@
                   <div class="quote-con">
                     <img
                       src="/images/PCMJ2uauHfpF.svg"
-                      alt="Screen Printing"
+                      alt=""
                       class="quote-icon"
+                      aria-hidden="true"
                     />
                   </div>
                   <div class="top-con">
@@ -765,8 +782,9 @@
                   <div class="quote-con">
                     <img
                       src="/images/PCMJ2uauHfpF.svg"
-                      alt="Screen Printing"
+                      alt=""
                       class="quote-icon"
+                      aria-hidden="true"
                     />
                   </div>
                   <div class="top-con">
@@ -793,8 +811,9 @@
                   <div class="quote-con">
                     <img
                       src="/images/PCMJ2uauHfpF.svg"
-                      alt="Screen Printing"
+                      alt=""
                       class="quote-icon"
+                      aria-hidden="true"
                     />
                   </div>
                   <div class="top-con">
@@ -821,60 +840,89 @@
         </div>
       </section>
 
-      <!-- Awards -->
-      <section id="awards" class="awards-sec sec-pt-80 stay-conn-gap text-center">
-        <div class="container animatedParent animateOnce" data-sequence="300">
-          <h2 class="animated fadeInLeftShort" data-id="1">Awards</h2>
-          <p class="animated fadeInLeftShort" data-id="2">
-            We are always seeking highly motivated and qualified candidates
-          </p>
-
-          <!-- Home & Beauty -->
-          <div class="awards-slider-sec">
-            <div class="owl-carousel owl-theme awards-slider">
-              <div class="item">
-                <div class="our-awards-logo">
-                  <img
-                    src="/media/awards/award-placeholder-1.svg"
-                    alt="Award certificate placeholder"
-                    class="award-placeholder-img"
-                  />
-                </div>
-                <p>Best Quality Supplier Certificate</p>
-              </div>
-              <div class="item">
-                <div class="our-awards-logo">
-                  <img
-                    src="/media/awards/award-placeholder-2.svg"
-                    alt="Award certificate placeholder"
-                    class="award-placeholder-img"
-                  />
-                </div>
-                <p>Best Vendor Quality Award</p>
-              </div>
-              <div class="item">
-                <div class="our-awards-logo">
-                  <img
-                    src="/media/awards/award-placeholder-3.svg"
-                    alt="Award certificate placeholder"
-                    class="award-placeholder-img"
-                  />
-                </div>
-                <p>Amantra Packaging Certificate</p>
+      <!-- Final CTA -->
+      <section id="projects" class="have-projects-sec sec-pt-80 sec-pb-80" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="have-projects-row">
+            <div class="col-left text-center text-lg-start">
+              <h2 id="projects-heading">Let&rsquo;s Build Something Powerful Together</h2>
+              <p>
+                Whether you&rsquo;re launching a new product, upgrading your
+                packaging, or exploring better production solutions Amantra
+                Packaging is ready to help you create packaging that truly
+                represents your brand.
+              </p>
+              <p class="have-projects-tagline">
+                <strong>Amantra Packaging Your Brand, Our Mantra.</strong>
+              </p>
+            </div>
+            <div class="col-right">
+              <div class="quoater mt-4 mt-lg-0">
+                <a
+                  href="https://wa.me/919990184480?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote%20from%20Amantra%20Packaging."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary amantra-cta-primary"
+                  ><span>Get A Quote</span></a
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- /content -->
-    </main>
+      <!-- Recognition -->
+      <section id="awards" class="awards-sec recognition-sec sec-pt-80 sec-pb-80 text-center" aria-labelledby="recognition-heading">
+        <div class="container">
+          <h2 id="recognition-heading">Recognition</h2>
+          <p class="section-lead recognition-sec__lead">
+            Best Quality Supplier Certificate, Best Vendor Quality Award, and Amantra Packaging Certificate.
+          </p>
 
-    <!-- footer -->
-    <!-- footer -->
-    <section id="contact" class="amantra-card-section">
+          <div class="recognition-grid row-md">
+            <div class="item col-md-4">
+              <div class="our-awards-logo">
+                <img
+                  src="/media/awards/award-placeholder-1.svg"
+                  alt="Best Quality Supplier Certificate"
+                  class="award-placeholder-img"
+                  width="200"
+                  height="140"
+                />
+              </div>
+              <p>Best Quality Supplier Certificate</p>
+            </div>
+            <div class="item col-md-4">
+              <div class="our-awards-logo">
+                <img
+                  src="/media/awards/award-placeholder-2.svg"
+                  alt="Best Vendor Quality Award"
+                  class="award-placeholder-img"
+                  width="200"
+                  height="140"
+                />
+              </div>
+              <p>Best Vendor Quality Award</p>
+            </div>
+            <div class="item col-md-4">
+              <div class="our-awards-logo">
+                <img
+                  src="/media/awards/award-placeholder-3.svg"
+                  alt="Amantra Packaging Certificate"
+                  class="award-placeholder-img"
+                  width="200"
+                  height="140"
+                />
+              </div>
+              <p>Amantra Packaging Certificate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="amantra-card-section" aria-labelledby="contact-heading">
       <div class="container">
-        <h2>Contact Amantra Packaging</h2>
+        <h2 id="contact-heading">Contact Amantra Packaging</h2>
         <p class="amantra-contact-intro">
           For packaging, labels, brochures, business cards, manuals and custom
           printing enquiries, connect directly with our team.
@@ -891,7 +939,7 @@
             <span class="label">Call</span>
             <strong>Phone Numbers</strong>
             <p>
-              <a href="tel:+9199990184480">+91-9990184480</a><br />
+              <a href="tel:+919990184480">+91-9990184480</a><br />
               <a href="tel:+919210077994">+91-9210077994</a>
             </p>
           </div>
@@ -914,6 +962,8 @@
         </div>
       </div>
     </section>
+    </main>
+
     <footer class="footer">
       <div class="footer-top">
         <div class="container">
@@ -958,44 +1008,19 @@
           <div class="footer-navigation">
             <ul class="footer-links">
               <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Solutions</a>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <a href="#portfolio">Work</a>
               </li>
               <li>
-                <a href="#services">Products</a>
+                <a href="#capabilities">Capabilities</a>
               </li>
               <li>
-                <a href="#sustainability">Capabilities</a>
+                <a href="#about">About</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-widget-social">
-            <ul class="footer-social-links">
-              <li>
-                <a href="" target="_blank" title="Facebook">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" title="Linkedin">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" title="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="" target="_blank" title="Twitter">
-                  <i class="fab fa-twitter"></i>
-                </a>
               </li>
             </ul>
           </div>
@@ -1013,17 +1038,13 @@
                 class="privacy-links d-flex flex-wrap justify-content-center justify-content-lg-end"
               >
                 <li>
-                  <a href="https://8hI4PnhBLoOM.com/privacy-policy"
-                    >Privacy Policy</a
-                  >
+                  <a href="#contact">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="https://8hI4PnhBLoOM.com/terms-and-conditions"
-                    >Terms and Conditions</a
-                  >
+                  <a href="#contact">Terms and Conditions</a>
                 </li>
                 <li>
-                  <a href="https://8hI4PnhBLoOM.com/sitemap">Sitemap</a>
+                  <a href="#home">Sitemap</a>
                 </li>
               </ul>
             </div>
@@ -1119,7 +1140,7 @@
           />
           <div
             class="error-txt order_person_name"
-            id="order_person_name"
+            id="error-order_person_name"
             style="display: none"
           ></div>
         </div>
@@ -1134,7 +1155,7 @@
           />
           <div
             class="error-txt order_person_email"
-            id="order_person_email"
+            id="error-order_person_email"
             style="display: none"
           ></div>
         </div>
@@ -1151,7 +1172,7 @@
           />
           <div
             class="error-txt order_person_mobile"
-            id="order_person_mobile"
+            id="error-order_person_mobile"
             style="display: none"
           ></div>
         </div>
@@ -1165,7 +1186,7 @@
           />
           <div
             class="error-txt order_subject"
-            id="order_subject"
+            id="error-order_subject"
             style="display: none"
           ></div>
         </div>
@@ -1178,7 +1199,7 @@
           ></textarea>
           <div
             class="error-txt order_message"
-            id="order_message"
+            id="error-order_message"
             style="display: none"
           ></div>
         </div>
@@ -1187,7 +1208,7 @@
       </form>
     </div>
 
-    <a id="button"><i class="fas fa-chevron-up"></i></a>
+    <a id="button" href="#home" aria-label="Back to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></a>
 
     <script src="/js/3LqngpdbOUg7.js"></script>
     <script src="/js/M8uVS30cjip9.js"></script>
@@ -1200,63 +1221,7 @@
     <script src="/js/config.js"></script>
     <script src="/js/forms.js"></script>
     <script src="/js/nav.js"></script>
-
-    <script>
-      // Load the Google Translate script dynamically
-      function loadGoogleTranslateScript() {
-        if (
-          typeof google === "object" &&
-          typeof google.translate === "object"
-        ) {
-          googleTranslateElementInit();
-          return;
-        }
-
-        const script = document.createElement("script");
-        // Important: the callback name in URL must match the global function name below
-        script.src =
-          "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-        script.async = true;
-        document.head.appendChild(script);
-      }
-
-      // This function must be globally accessible (not wrapped in a block or IIFE)
-      function googleTranslateElementInit() {
-        if (
-          typeof google === "object" &&
-          google.translate &&
-          google.translate.TranslateElement
-        ) {
-          new google.translate.TranslateElement(
-            {
-              pageLanguage: "en",
-              includedLanguages: "en,hi,fr,de,es,ta,te,bn,ml", // optional
-              autoDisplay: false,
-            },
-            "google_translate_element",
-          );
-
-          // Optional cleanup
-          const $googleDiv = $("#google_translate_element .skiptranslate");
-          const $googleDivChild = $(
-            "#google_translate_element .skiptranslate div",
-          );
-          $googleDivChild.next().remove();
-          $googleDiv
-            .contents()
-            .filter(function () {
-              return this.nodeType === 3 && $.trim(this.nodeValue) !== "";
-            })
-            .remove();
-        } else {
-          console.warn("Google Translate API not yet available   retrying...");
-          setTimeout(googleTranslateElementInit, 1000);
-        }
-      }
-
-      // Trigger load
-      loadGoogleTranslateScript();
-    </script>
+    <script src="/js/amantra.js"></script>
 
     <script>
       $(function () {
