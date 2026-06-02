@@ -113,29 +113,6 @@ $(owl).on("translated.owl.carousel", function (event) {
 	}
 });
 
-//portfolio-slider
-$('.awards-slider').owlCarousel({
-	loop: false,
-	margin: 20,
-	nav: true,
-	dots: false,
-	responsiveClass: true,
-	responsive: {
-		0: {
-			items: 1,
-			margin: 10,
-		},
-		1024: {
-			items: 2,
-		},
-		1280: {
-			items: 3,
-		},
-		1400: {
-			items: 4,
-		}
-	}
-});
 //packaging-services-slider-slider
 $('.packaging-services-slider').owlCarousel({
 	loop: false,
