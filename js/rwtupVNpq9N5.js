@@ -83,10 +83,10 @@ $('.satisfied-slider').owlCarousel({
 			items: 1,
 		},
 		1280: {
-			items: 2.2,
+			items: 2,
 		},
 		1300: {
-			items: 2.2,
+			items: 2,
 		}
 	}
 });
@@ -375,11 +375,8 @@ $(window).resize(function() {
 
 function showserviceCarousel() {
   if ($serviceCarousel.data("owlCarousel") !== "undefined") {
-    if (window.matchMedia('(max-width: 767px)').matches) {
-      initialserviceCarousel();
-    } else {
-      destroyserviceCarousel();
-    }
+    /* Mobile: stacked cards (natural height). Desktop: static 2-column grid. */
+    destroyserviceCarousel();
   }
 }
 showserviceCarousel();

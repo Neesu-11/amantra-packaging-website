@@ -1,0 +1,507 @@
+{
+  "/media/portfolio/carton-1.png": {
+    "source": "/media/portfolio/carton-1.png",
+    "sourceBytes": 414665,
+    "originalWidth": 525,
+    "originalHeight": 501,
+    "variants": [
+      {
+        "width": 400,
+        "height": 382,
+        "path": "/media/portfolio/carton-1-400w.webp",
+        "bytes": 23910
+      },
+      {
+        "width": 525,
+        "height": 501,
+        "path": "/media/portfolio/carton-1-800w.webp",
+        "bytes": 35638
+      }
+    ]
+  },
+  "/media/portfolio/carton-2.png": {
+    "source": "/media/portfolio/carton-2.png",
+    "sourceBytes": 402825,
+    "originalWidth": 523,
+    "originalHeight": 465,
+    "variants": [
+      {
+        "width": 400,
+        "height": 356,
+        "path": "/media/portfolio/carton-2-400w.webp",
+        "bytes": 19696
+      },
+      {
+        "width": 523,
+        "height": 465,
+        "path": "/media/portfolio/carton-2-800w.webp",
+        "bytes": 28642
+      }
+    ]
+  },
+  "/media/portfolio/carton-3.png": {
+    "source": "/media/portfolio/carton-3.png",
+    "sourceBytes": 283974,
+    "originalWidth": 511,
+    "originalHeight": 451,
+    "variants": [
+      {
+        "width": 400,
+        "height": 353,
+        "path": "/media/portfolio/carton-3-400w.webp",
+        "bytes": 9852
+      },
+      {
+        "width": 511,
+        "height": 451,
+        "path": "/media/portfolio/carton-3-800w.webp",
+        "bytes": 13392
+      }
+    ]
+  },
+  "/media/portfolio/carton-4.png": {
+    "source": "/media/portfolio/carton-4.png",
+    "sourceBytes": 280111,
+    "originalWidth": 478,
+    "originalHeight": 385,
+    "variants": [
+      {
+        "width": 400,
+        "height": 322,
+        "path": "/media/portfolio/carton-4-400w.webp",
+        "bytes": 14966
+      },
+      {
+        "width": 478,
+        "height": 385,
+        "path": "/media/portfolio/carton-4-800w.webp",
+        "bytes": 19168
+      }
+    ]
+  },
+  "/media/portfolio/carton-5.png": {
+    "source": "/media/portfolio/carton-5.png",
+    "sourceBytes": 381204,
+    "originalWidth": 496,
+    "originalHeight": 439,
+    "variants": [
+      {
+        "width": 400,
+        "height": 354,
+        "path": "/media/portfolio/carton-5-400w.webp",
+        "bytes": 19372
+      },
+      {
+        "width": 496,
+        "height": 439,
+        "path": "/media/portfolio/carton-5-800w.webp",
+        "bytes": 26938
+      }
+    ]
+  },
+  "/media/portfolio/carton-6.png": {
+    "source": "/media/portfolio/carton-6.png",
+    "sourceBytes": 374912,
+    "originalWidth": 550,
+    "originalHeight": 432,
+    "variants": [
+      {
+        "width": 400,
+        "height": 314,
+        "path": "/media/portfolio/carton-6-400w.webp",
+        "bytes": 16692
+      },
+      {
+        "width": 550,
+        "height": 432,
+        "path": "/media/portfolio/carton-6-800w.webp",
+        "bytes": 25922
+      }
+    ]
+  },
+  "/media/portfolio/finish-1.png": {
+    "source": "/media/portfolio/finish-1.png",
+    "sourceBytes": 272348,
+    "originalWidth": 643,
+    "originalHeight": 252,
+    "variants": [
+      {
+        "width": 400,
+        "height": 157,
+        "path": "/media/portfolio/finish-1-400w.webp",
+        "bytes": 10816
+      },
+      {
+        "width": 643,
+        "height": 252,
+        "path": "/media/portfolio/finish-1-800w.webp",
+        "bytes": 24496
+      }
+    ]
+  },
+  "/media/portfolio/finish-2.png": {
+    "source": "/media/portfolio/finish-2.png",
+    "sourceBytes": 1219675,
+    "originalWidth": 1177,
+    "originalHeight": 844,
+    "variants": [
+      {
+        "width": 400,
+        "height": 287,
+        "path": "/media/portfolio/finish-2-400w.webp",
+        "bytes": 8726
+      },
+      {
+        "width": 800,
+        "height": 574,
+        "path": "/media/portfolio/finish-2-800w.webp",
+        "bytes": 23874
+      }
+    ]
+  },
+  "/media/portfolio/finish-3.png": {
+    "source": "/media/portfolio/finish-3.png",
+    "sourceBytes": 366181,
+    "originalWidth": 529,
+    "originalHeight": 523,
+    "variants": [
+      {
+        "width": 400,
+        "height": 395,
+        "path": "/media/portfolio/finish-3-400w.webp",
+        "bytes": 9678
+      },
+      {
+        "width": 529,
+        "height": 523,
+        "path": "/media/portfolio/finish-3-800w.webp",
+        "bytes": 13932
+      }
+    ]
+  },
+  "/media/portfolio/finish-4.png": {
+    "source": "/media/portfolio/finish-4.png",
+    "sourceBytes": 310382,
+    "originalWidth": 514,
+    "originalHeight": 508,
+    "variants": [
+      {
+        "width": 400,
+        "height": 395,
+        "path": "/media/portfolio/finish-4-400w.webp",
+        "bytes": 8928
+      },
+      {
+        "width": 514,
+        "height": 508,
+        "path": "/media/portfolio/finish-4-800w.webp",
+        "bytes": 12286
+      }
+    ]
+  },
+  "/media/portfolio/finish-5.png": {
+    "source": "/media/portfolio/finish-5.png",
+    "sourceBytes": 377753,
+    "originalWidth": 499,
+    "originalHeight": 493,
+    "variants": [
+      {
+        "width": 400,
+        "height": 395,
+        "path": "/media/portfolio/finish-5-400w.webp",
+        "bytes": 12182
+      },
+      {
+        "width": 499,
+        "height": 493,
+        "path": "/media/portfolio/finish-5-800w.webp",
+        "bytes": 19212
+      }
+    ]
+  },
+  "/media/portfolio/label-1.png": {
+    "source": "/media/portfolio/label-1.png",
+    "sourceBytes": 474367,
+    "originalWidth": 528,
+    "originalHeight": 531,
+    "variants": [
+      {
+        "width": 400,
+        "height": 402,
+        "path": "/media/portfolio/label-1-400w.webp",
+        "bytes": 26848
+      },
+      {
+        "width": 528,
+        "height": 531,
+        "path": "/media/portfolio/label-1-800w.webp",
+        "bytes": 38892
+      }
+    ]
+  },
+  "/media/portfolio/label-2.png": {
+    "source": "/media/portfolio/label-2.png",
+    "sourceBytes": 466536,
+    "originalWidth": 526,
+    "originalHeight": 397,
+    "variants": [
+      {
+        "width": 400,
+        "height": 302,
+        "path": "/media/portfolio/label-2-400w.webp",
+        "bytes": 32600
+      },
+      {
+        "width": 526,
+        "height": 397,
+        "path": "/media/portfolio/label-2-800w.webp",
+        "bytes": 47180
+      }
+    ]
+  },
+  "/media/portfolio/label-3.png": {
+    "source": "/media/portfolio/label-3.png",
+    "sourceBytes": 417948,
+    "originalWidth": 538,
+    "originalHeight": 535,
+    "variants": [
+      {
+        "width": 400,
+        "height": 398,
+        "path": "/media/portfolio/label-3-400w.webp",
+        "bytes": 17112
+      },
+      {
+        "width": 538,
+        "height": 535,
+        "path": "/media/portfolio/label-3-800w.webp",
+        "bytes": 24736
+      }
+    ]
+  },
+  "/media/portfolio/label-4.png": {
+    "source": "/media/portfolio/label-4.png",
+    "sourceBytes": 412883,
+    "originalWidth": 541,
+    "originalHeight": 474,
+    "variants": [
+      {
+        "width": 400,
+        "height": 350,
+        "path": "/media/portfolio/label-4-400w.webp",
+        "bytes": 19176
+      },
+      {
+        "width": 541,
+        "height": 474,
+        "path": "/media/portfolio/label-4-800w.webp",
+        "bytes": 30796
+      }
+    ]
+  },
+  "/media/portfolio/label-5.png": {
+    "source": "/media/portfolio/label-5.png",
+    "sourceBytes": 447371,
+    "originalWidth": 535,
+    "originalHeight": 547,
+    "variants": [
+      {
+        "width": 400,
+        "height": 409,
+        "path": "/media/portfolio/label-5-400w.webp",
+        "bytes": 33248
+      },
+      {
+        "width": 535,
+        "height": 547,
+        "path": "/media/portfolio/label-5-800w.webp",
+        "bytes": 49922
+      }
+    ]
+  },
+  "/media/portfolio/label-6.png": {
+    "source": "/media/portfolio/label-6.png",
+    "sourceBytes": 477552,
+    "originalWidth": 543,
+    "originalHeight": 535,
+    "variants": [
+      {
+        "width": 400,
+        "height": 394,
+        "path": "/media/portfolio/label-6-400w.webp",
+        "bytes": 23960
+      },
+      {
+        "width": 543,
+        "height": 535,
+        "path": "/media/portfolio/label-6-800w.webp",
+        "bytes": 33814
+      }
+    ]
+  },
+  "/media/portfolio/pouch-4.png": {
+    "source": "/media/portfolio/pouch-4.png",
+    "sourceBytes": 6716855,
+    "originalWidth": 2816,
+    "originalHeight": 1536,
+    "variants": [
+      {
+        "width": 400,
+        "height": 218,
+        "path": "/media/portfolio/pouch-4-400w.webp",
+        "bytes": 7382
+      },
+      {
+        "width": 800,
+        "height": 436,
+        "path": "/media/portfolio/pouch-4-800w.webp",
+        "bytes": 20502
+      }
+    ]
+  },
+  "/media/portfolio/pouch-5.png": {
+    "source": "/media/portfolio/pouch-5.png",
+    "sourceBytes": 7667746,
+    "originalWidth": 2816,
+    "originalHeight": 1536,
+    "variants": [
+      {
+        "width": 400,
+        "height": 218,
+        "path": "/media/portfolio/pouch-5-400w.webp",
+        "bytes": 13822
+      },
+      {
+        "width": 800,
+        "height": 436,
+        "path": "/media/portfolio/pouch-5-800w.webp",
+        "bytes": 43512
+      }
+    ]
+  },
+  "/media/portfolio/pouch-6.png": {
+    "source": "/media/portfolio/pouch-6.png",
+    "sourceBytes": 566734,
+    "originalWidth": 535,
+    "originalHeight": 529,
+    "variants": [
+      {
+        "width": 400,
+        "height": 396,
+        "path": "/media/portfolio/pouch-6-400w.webp",
+        "bytes": 27370
+      },
+      {
+        "width": 535,
+        "height": 529,
+        "path": "/media/portfolio/pouch-6-800w.webp",
+        "bytes": 45696
+      }
+    ]
+  },
+  "/media/portfolio/pouch-7.png": {
+    "source": "/media/portfolio/pouch-7.png",
+    "sourceBytes": 296349,
+    "originalWidth": 495,
+    "originalHeight": 373,
+    "variants": [
+      {
+        "width": 400,
+        "height": 301,
+        "path": "/media/portfolio/pouch-7-400w.webp",
+        "bytes": 15248
+      },
+      {
+        "width": 495,
+        "height": 373,
+        "path": "/media/portfolio/pouch-7-800w.webp",
+        "bytes": 19744
+      }
+    ]
+  },
+  "/media/services/digital.png": {
+    "source": "/media/services/digital.png",
+    "sourceBytes": 2012224,
+    "originalWidth": 1536,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "/media/services/digital-600w.webp",
+        "bytes": 24016
+      },
+      {
+        "width": 1200,
+        "height": 800,
+        "path": "/media/services/digital-1200w.webp",
+        "bytes": 63076
+      }
+    ]
+  },
+  "/media/services/flexo.png": {
+    "source": "/media/services/flexo.png",
+    "sourceBytes": 2192399,
+    "originalWidth": 1536,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "/media/services/flexo-600w.webp",
+        "bytes": 36974
+      },
+      {
+        "width": 1200,
+        "height": 800,
+        "path": "/media/services/flexo-1200w.webp",
+        "bytes": 87866
+      }
+    ]
+  },
+  "/media/services/offset.png": {
+    "source": "/media/services/offset.png",
+    "sourceBytes": 2381118,
+    "originalWidth": 1536,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "/media/services/offset-600w.webp",
+        "bytes": 41730
+      },
+      {
+        "width": 1200,
+        "height": 800,
+        "path": "/media/services/offset-1200w.webp",
+        "bytes": 113444
+      }
+    ]
+  },
+  "/media/services/screen.png": {
+    "source": "/media/services/screen.png",
+    "sourceBytes": 2317587,
+    "originalWidth": 1536,
+    "originalHeight": 1024,
+    "variants": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "/media/services/screen-600w.webp",
+        "bytes": 30940
+      },
+      {
+        "width": 1200,
+        "height": 800,
+        "path": "/media/services/screen-1200w.webp",
+        "bytes": 81438
+      }
+    ]
+  },
+  "_hero": {
+    "optimized": true,
+    "bytes": 1197056,
+    "poster": "/media/hero-poster.webp"
+  }
+}
